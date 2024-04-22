@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
-    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/25d0d63a22.js" crossorigin="anonymous"></script>
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <h2 class="nav title">
+          <%= link_to "TweetApp", root_path %>
+        </h2>
+        <ul class="navbar-nav">
+          <li class="nav item">
+            TweetAppとは
+          </li>
+        </ul>
+      </nav>
+    </header>
     <%= yield %>
   </body>
 </html>
